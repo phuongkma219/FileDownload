@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/download"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:background="@color/teal_200"
+            android:textColor="@color/white"/>
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/btnOpenFile"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/btnDownload"
+           app:layout_constraintBottom_toTopOf="@id/btnSetWallpaper"
+           android:layout_marginTop="48dp"
+           android:text="@string/open_file"
+           android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+           android:background="@color/teal_200"
+           android:textColor="@color/white"
+           />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSetWallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnOpenFile"
+            android:layout_marginTop="48dp"
+            android:text="@string/set_wallpaper"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:background="@color/teal_200"
+            android:textColor="@color/white"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnZip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnSetWallpaper"
+            android:layout_marginTop="48dp"
+            android:text="@string/zip"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:background="@color/teal_200"
+            android:textColor="@color/white"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUnZip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnZip"
+            android:layout_marginTop="48dp"
+            android:text="@string/un_zip"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:background="@color/teal_200"
+            android:textColor="@color/white"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
